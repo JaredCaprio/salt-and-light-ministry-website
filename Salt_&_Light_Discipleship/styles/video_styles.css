@@ -1,0 +1,112 @@
+.page-header {
+  background-image: url(../Img/birds-skyway.webp);
+}
+
+.main-content {
+  background-color: #0b0909;
+}
+
+/* TEACHING VIDEOS*/
+
+.video-teach-container {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+.video-teach {
+  display: flex;
+  height: 100%;
+}
+
+.video-teach video {
+  width: 100%;
+  max-height: 500px;
+  flex-shrink: 0;
+}
+.h2-large {
+  margin: 1em;
+}
+
+.teach-heading {
+  background-color: #0b0909;
+  color: rgb(224, 228, 227);
+  margin: 0;
+  padding: 1em;
+}
+
+.vid-thumb-item {
+  position: relative;
+}
+
+.vids-thumbs-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.vid-thumb-item img {
+  width: 100%;
+  opacity: 0.25;
+  transition: all 250ms ease-in-out;
+}
+
+.vid-thumb-item img:hover {
+  opacity: 0.5;
+}
+
+.vid-thumb-overlay {
+  color: rgba(227, 227, 227, 0.869);
+  font-size: 1rem;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 5px;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  /*TEACHING VIDEOS */
+
+  .video-teach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+  }
+
+  .video-teach video {
+    width: 90%;
+    max-height: 500px;
+    flex-shrink: 0;
+  }
+
+  .vids-thumbs-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vid-thumb-item img {
+    width: 650px;
+    opacity: 0.25;
+    transition: all 250ms ease-in-out;
+  }
+
+  .vid-thumbs-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .vid-thumb-item {
+    padding: 3em;
+  }
+
+  .vid-thumb-overlay {
+    font-size: 2rem;
+  }
+}

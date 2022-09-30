@@ -1,0 +1,124 @@
+.main-content {
+  background-image: url(../Img/clouds-bird.webp);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--snl-secondary);
+  background-blend-mode: darken;
+}
+.hero-text {
+  color: rgb(245, 243, 243);
+  height: 55vh;
+  padding: 1em;
+  animation: hero-load 1.5s ease-in 3ms;
+}
+
+.hero-text p {
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.hero-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding: 0.25em 0.5em;
+}
+
+.hero-text,
+.hero-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text a {
+  margin: 1em;
+}
+
+.logo {
+  height: 55px;
+}
+
+.verse-name {
+  display: block;
+
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  padding-left: 12em;
+  padding-top: 1.5em;
+}
+
+@keyframes hero-load {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero-text {
+    padding-top: 15em;
+    font-size: 0.955rem;
+  }
+}
+@media screen and (min-width: 280px) {
+  .hero-text {
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content {
+    background-size: cover;
+  }
+  .hero-text {
+    padding-top: 5em;
+    font-size: 1.65rem;
+  }
+  .hero-text p {
+    font-weight: 300;
+  }
+  .hero-btn {
+    color: black;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 0.35em 0.95em;
+  }
+}
+@media screen and (max-height: 420px) {
+  .hero-text {
+    padding-top: 9em;
+    font-size: 0.85rem;
+    top: 3%;
+  }
+  .hero-text p {
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-text {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    padding-top: 0;
+  }
+}

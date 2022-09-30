@@ -1,0 +1,8 @@
+.page-header {
+  height: 100vh;
+  background-image: url(../Img/pine-trees-sunset.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--snl-secondary);
+  background-blend-mode: darken;
+}

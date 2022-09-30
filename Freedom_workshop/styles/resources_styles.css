@@ -1,0 +1,118 @@
+.page-header-overlay {
+  font-size: 1.75rem;
+}
+
+.page-header {
+  height: 100vh;
+  background-image: url(../Img/bush-sunset.webp);
+  background-color: rgb(68, 255, 255);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.resource-block {
+  min-height: 75vh;
+  padding: 0;
+  margin: 2em 0em;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.223);
+  /* background-color: var(--sec-teal); */
+  background-image: linear-gradient(
+    120deg,
+    var(--main-teal) 10%,
+    var(--sec-teal) 100%,
+    rgb(183, 228, 226) 0%
+  );
+  border-radius: 50px;
+  width: 90%;
+  opacity: 0;
+  transition: all 490ms ease-in-out;
+}
+
+.resource-block:hover {
+  background-image: linear-gradient(
+    120deg,
+    var(--main-teal) 10%,
+    var(--sec-teal) 90%,
+    rgb(183, 228, 226) 100%
+  );
+}
+
+.info-block-active {
+  opacity: 1;
+}
+
+.resource-block-img {
+  border-radius: 50px 50px 0 0;
+  object-fit: cover;
+  height: 475px;
+  width: 100%;
+  filter: blur(1px);
+  transition: filter 290ms ease-in-out;
+}
+
+.resource-block:hover .resource-block-img {
+  filter: blur(0);
+}
+
+.resource-list {
+  /*  text-decoration: underline; */
+  text-align: center;
+  padding-bottom: 3.5em;
+}
+
+.resource-list li {
+  font-size: 1.1rem;
+  color: rgb(19, 19, 254);
+  padding: 0.75em 0;
+  transition: all 150ms ease-in-out;
+}
+
+.resource-list li:hover {
+  transform: scale(1.06);
+}
+
+.international-resources {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    height: 100vh;
+    background-image: url(../Img/bush-sunset.webp);
+    background-color: rgb(68, 255, 255);
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+
+  .page-header-overlay {
+    font-size: 4.5rem;
+  }
+
+  .resource-block {
+    width: auto;
+  }
+
+  .resource-block img {
+    border-radius: 50px 50px 0 0;
+    height: 350px;
+    width: 375px;
+  }
+
+  .international-resources {
+    align-items: stretch;
+  }
+
+  .FW-resource-section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

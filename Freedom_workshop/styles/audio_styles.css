@@ -1,0 +1,124 @@
+.page-header {
+  height: 100vh;
+  background-image: url(../Img/sunset-dock.webp);
+  background-color: rgb(68, 255, 255);
+  background-blend-mode: darken;
+  background-size: fill;
+}
+
+/* .audio-main {
+  min-height: 200vh;
+} */
+
+.audio-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 75vh;
+  max-width: 500px;
+  padding: 0;
+  margin: 2em 2em;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.223);
+  background-image: linear-gradient(
+    120deg,
+    var(--main-teal) 10%,
+    var(--sec-teal) 100%,
+    rgb(183, 228, 226) 0%
+  );
+  border-radius: 50px;
+  width: 90%;
+  opacity: 0;
+  text-align: center;
+  transition: all 490ms ease-in-out;
+}
+
+.audio-section:hover {
+  background-image: linear-gradient(
+    120deg,
+    var(--main-teal) 10%,
+    var(--sec-teal) 90%,
+    rgb(183, 228, 226) 100%
+  );
+}
+
+.info-block-active {
+  opacity: 1;
+}
+
+.audio-block-img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 50px 50px 0 0;
+  filter: blur(1px);
+  transition: all 490ms ease-in-out;
+}
+
+.audio-section:hover .audio-block-img {
+  filter: blur(0);
+}
+
+.audio-container {
+  height: 100%;
+  padding: 0.2em;
+  position: relative;
+}
+
+.audio-block-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  font-size: 15px;
+  position: relative;
+  z-index: -2;
+}
+
+.fa-volume-high,
+.fa-headphones {
+  position: absolute;
+  opacity: 0.04;
+  color: var(--dark-teal);
+  top: 500px;
+  left: 0%;
+}
+
+audio {
+  max-width: 100%;
+  margin: 2em 0;
+}
+
+.text-block {
+  padding: 1em;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-container {
+    font-size: 33px;
+  }
+
+  .audio-container {
+    height: 100%;
+  }
+
+  .audio-block-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .icon-container {
+    font-size: 65px;
+  }
+  audio {
+    max-width: 150%;
+  }
+}

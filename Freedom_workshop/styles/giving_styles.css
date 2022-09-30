@@ -1,0 +1,37 @@
+.page-header {
+  background-image: url(../Img/sea-oats.webp);
+  height: 100vh;
+  background-color: var(--blend-teal);
+  background-blend-mode: darken;
+}
+
+.page-header h1 {
+  filter: blur(0px);
+}
+
+.text-block img {
+  float: left;
+  width: 100%;
+  padding: 0 1em 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .text-block img {
+    width: auto;
+    padding: 0 2em 2em 0;
+  }
+  .text-block-container {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-block-container {
+    padding: 3rem 10rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text-block-container {
+    padding: 3rem 15rem;
+  }
+}

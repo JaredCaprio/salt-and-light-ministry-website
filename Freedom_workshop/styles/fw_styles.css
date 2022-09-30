@@ -1,0 +1,123 @@
+/* MAIN CONTENT  */
+
+.main-content {
+  background-image: url(../Img/teal-building.webp);
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero-text {
+  height: 55vh;
+  animation: hero-load 1s ease-in 3ms;
+}
+
+.hero-text h1 {
+  color: white;
+}
+
+.hero-text p {
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.hero-text a {
+  color: black;
+}
+
+.hero-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  background-color: var(--sec-teal);
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding: 0.25em 0.5em;
+
+  transition: background-color 300ms ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--dark-teal);
+  color: white;
+}
+
+.hero-text,
+.hero-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text a {
+  margin: 0.5em;
+}
+
+.logo {
+  height: 55px;
+}
+
+@keyframes hero-load {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero-text {
+    padding-top: 15em;
+    font-size: 0.955rem;
+  }
+}
+@media screen and (min-width: 280px) {
+  .hero-text {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    background-size: cover;
+  }
+  .hero-text {
+    padding-top: 5em;
+    font-size: 1.65rem;
+    top: 5%;
+  }
+  .hero-text p {
+    font-weight: 300;
+  }
+  .hero-btn {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 0.35em 0.95em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-text {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    padding-top: 0;
+  }
+}

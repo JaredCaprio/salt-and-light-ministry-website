@@ -1,0 +1,67 @@
+.page-header {
+  height: 100vh;
+  background-image: url(../Img/balcony.webp);
+  background-color: var(--blend-teal);
+  background-blend-mode: darken;
+}
+
+.page-header-overlay {
+  font-size: 2.2rem;
+}
+
+.testimony-block {
+  text-align: center;
+}
+
+.testimony-p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 280px) {
+  .page-header-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header-overlay {
+    font-size: 3.5rem;
+  }
+  .written-testimonies {
+    position: relative;
+  }
+
+  .written-icon-container .fa-quote-left,
+  .written-icon-container .fa-quote-right {
+    position: absolute;
+  }
+  .written-icon-container .fa-quote-left {
+    top: 8%;
+    left: 12%;
+  }
+  .written-icon-container .fa-quote-right {
+    top: 83%;
+    left: 80%;
+  }
+
+  .testimony-block {
+    font-style: italic;
+    opacity: 0.95;
+    text-align: center;
+  }
+
+  blockquote {
+    border-left: solid 6px #dddddd;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-header-overlay {
+    font-size: 5rem;
+  }
+}

@@ -1,0 +1,87 @@
+.page-header {
+  background-image: url(../Img/pier.jpeg);
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.audio-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+  margin: 2em 0.5em;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.223);
+  background-image: linear-gradient(
+    120deg,
+    #362e28 10%,
+    #282836 100%,
+    #4a3535 0%
+  );
+  border-radius: 50px;
+  opacity: 0;
+  text-align: center;
+  transition: all 490ms ease-in-out;
+}
+
+.audio-section audio {
+  width: 90%;
+}
+
+.audio-section:hover {
+  background-image: linear-gradient(
+    120deg,
+    #362e28 10%,
+    #282836 90%,
+    #4a3535 100%
+  );
+}
+
+.info-block-active {
+  opacity: 1;
+}
+
+.audio-block-img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 50px 50px 0 0;
+  filter: blur(1px);
+  transition: all 490ms ease-in-out;
+}
+
+.audio-section:hover .audio-block-img {
+  filter: blur(0);
+}
+
+.audio-container {
+  height: 100%;
+  padding: 0.2em;
+  position: relative;
+}
+
+.audio-block-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-block {
+  padding-bottom: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .audio-section {
+    max-width: 550px;
+    min-height: 74vh;
+    margin: 2em 2em;
+  }
+}

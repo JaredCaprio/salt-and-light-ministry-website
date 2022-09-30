@@ -1,0 +1,45 @@
+.page-header {
+  background-image: url(../Img/sunset-beach2.webp);
+  height: 100vh;
+  background-color: rgb(68, 255, 255);
+  background-blend-mode: darken;
+}
+
+.page-content {
+  height: 100%;
+}
+
+.text-block p {
+  padding-bottom: 1em;
+}
+
+.text-block img {
+  float: left;
+  width: 100%;
+  padding: 0 1em 1em 0;
+}
+
+.text-block-container {
+  padding: 3rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text-block img {
+    width: auto;
+    padding: 0 2em 2em 0;
+  }
+  .text-block-container {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-block-container {
+    padding: 3rem 10rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text-block-container {
+    padding: 3rem 15rem;
+  }
+}
